@@ -30,9 +30,11 @@ hdiutil resize -size `hdiutil resize -limits /tmp/ElCapitan.sparseimage | tail -
 
 # Convert the sparse bundle to ISO/CD master
 hdiutil convert /tmp/ElCapitan.sparseimage -format UDTO -o /tmp/ElCapitan
+#hdiutil convert /tmp/ElCapitan.sparseimage -format UDZO -o /tmp/ElCapitan
 
 # Remove the sparse bundle
 rm /tmp/ElCapitan.sparseimage
 
 # Rename the ISO and move it to the desktop
 mv /tmp/ElCapitan.cdr ~/Desktop/ElCapitan.iso
+#mv /tmp/ElCapitan.dmg ~/Desktop/ElCapitan.iso
